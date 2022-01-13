@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>changBack ground by Js</title>
+
+    <!---------------- style --------------------->
+
+    <style>
+        body{
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+        button{
+            width: 200px;
+            height: 40px;
+        }
+        .button-container{
+            width: 50%;;
+        }
+
+    </style>
+
+    <!---------------- style --------------------->
+
+</head>
+<body id="body" >
+    <div class="button-container">
+        <button  onclick="changBgDark()">dark</button>
+        <button onclick="changBgWhite()">light</button>
+    </div>
+    
+    <div class="container">
+        
+        <p id="text">
+           Lorem ipsum dolor sit amet.
+        </p>
+    </div>
+    
+
+        <!---------------- script --------------------->
+
+    <script>
+    var container = document.querySelector(".container");
+    var text = document.querySelector("#text");
+
+    function changBgDark(){
+        body.style.background ="#000";
+        text.style.color="#fff";
+
+    }
+    function changBgWhite(){
+        body.style.background ="#FFF";
+        text.style.color="#000";
+
+    }
+    </script>
+
+            <!---------------- script --------------------->
+
+</body>
+</html>
